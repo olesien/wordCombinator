@@ -1,6 +1,7 @@
 //DON'T REPEAT YOURSELF YOU PLEB
 
 const word = document.querySelector ('#word')
+const translate = document.querySelector ('#Translate')
 const Http = new XMLHttpRequest();
 const url='https://random-word-api.herokuapp.com/word?key=CNFJ959F&number=2';
 
@@ -15,32 +16,29 @@ Http.send();
 Http.onreadystatechange = (e) => {
 //  console.log(Http.responseText)
 //    jsonText = Http.responseText;
-    let list = JSON.parse(Http.responseText);
-    words(list);
+
     
+    let translatelist = JSON.parse(Http.responseText);
+    words(translatelist);
+Http.open("GET", "https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20191021T192454Z.c43817007eac43cd.9ac53323ffbcbf6aeb330f858abd1dd2b0f84b8c&text="+ translatelist +"&lang=en-sv");
+Http.send();
+Http.onreadystatechange = (e) => {
+    var json = Http.responseText;
+    obj = JSON.parse(json)
+
+    console.log("Translated:" + obj.text)
+    document.getElementById("Translated").innerHTML = "Translated: " + obj.text;
+}
 }
 
 
 });
 
-let word1 = '';
-let word2 = '';
-
 function words(lists) {
-//    word1 = jsonReturn[0];
-//    word2 = jsonReturn;
+
     console.log(lists[0]);
     console.log(lists[1]);
-    document.getElementById("word1").innerHTML = lists[0];
-    document.getElementById("word2").innerHTML = lists[1];
-}
-
-//Translate this to two variables, word1 and word2
-
-
-//Translate the word to swedish
-//let ord1 = '';
-//let ord2 = '';
-
-//combine the two
+    document.getElementById("word1").innerHTML = "Word 2: " + lists[0];
+    document.getElementById("word2").innerHTML = "Word 1: " +lists[1];
+};
 
