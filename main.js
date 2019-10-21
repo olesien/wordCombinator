@@ -31,6 +31,8 @@ function words(lists) {
 //    word2 = jsonReturn;
     console.log(lists[0]);
     console.log(lists[1]);
+    document.getElementById("word1").innerHTML = lists[0];
+    document.getElementById("word2").innerHTML = lists[1];
 }
 
 //Translate this to two variables, word1 and word2
