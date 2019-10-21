@@ -19,12 +19,12 @@ Http.onreadystatechange = (e) => {
 
 //Translate this to two variables, word1 and word2
 
-let word1 = '';
-let word2 = '';
+//let word1 = '';
+//let word2 = '';
 
 //Translate the word to swedish
-let ord1 = '';
-let ord2 = '';
+//let ord1 = '';
+//let ord2 = '';
 
 //combine the two
 
