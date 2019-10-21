@@ -28,7 +28,7 @@ function words(lists) {
     translation(word1, word2);
 }
 
-function translation(word1, word2) {
+async function translation(word1, word2) {
 //    https://translate.yandex.net/api/v1.5/tr.json/translate
 // ? key=<API key>
 // & text=<text to translate>
@@ -46,10 +46,13 @@ function translation(word1, word2) {
 //Http.send();
 //Http.onreadystatechange = (e) => {
 //console.log(Http.responseText)
-}
-
-});
     
-
+//const response = await fetch('https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20191021T192454Z.c43817007eac43cd.9ac53323ffbcbf6aeb330f858abd1dd2b0f84b8c&text=hello&lang=en-sv');
+//const myJson = await response.json();
+//console.log(JSON.stringify(myJson));
+    
+//const myJson = await response.json();
+//const objects = JSON.parse(myJson);
+//console.log(objects.name);
 }
 
