@@ -30,7 +30,7 @@ function words(lists) {
 //    word1 = jsonReturn[0];
 //    word2 = jsonReturn;
     console.log(lists[0]);
-    console.log(lists[1]);
+//    console.log(lists[1]);
 }
 
 //Translate this to two variables, word1 and word2
