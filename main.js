@@ -40,5 +40,3 @@ function words(jsonReturn) {
 
 //combine the two
 
-
-
