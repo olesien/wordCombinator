@@ -16,6 +16,7 @@ Http.onreadystatechange = (e) => {
 
 
 });
+
 //Translate this to two variables, word1 and word2
 
 let word1 = '';
@@ -26,6 +27,4 @@ let ord1 = '';
 let ord2 = '';
 
 //combine the two
-
-
 
