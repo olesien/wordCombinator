@@ -44,11 +44,7 @@ function translation(word1, word2) {
 // & [callback=<name of the callback function>]
 // OUR KEY: trnsl.1.1.20191021T192454Z.c43817007eac43cd.9ac53323ffbcbf6aeb330f858abd1dd2b0f84b8c
 // MY EXAMPLE: https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20191021T192454Z.c43817007eac43cd.9ac53323ffbcbf6aeb330f858abd1dd2b0f84b8c&text=hello&lang=en-sv
+//MISSION: create a function that takes word (word1 and word2) and creates a finished output in swedish
 
 }
-
-//let ord1 = '';
-//let ord2 = '';
-
-//combine the two
 
