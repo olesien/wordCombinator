@@ -34,7 +34,9 @@ function words(lists) {
 //    word2 = jsonReturn;
 }
 
-function translation(word1, word2;)
+function translation(word1, word2) {
+    
+}
 
 //Translate this to two variables, word1 and word2
 
