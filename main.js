@@ -15,7 +15,8 @@ Http.send();
 Http.onreadystatechange = (e) => {
 //  console.log(Http.responseText)
 //    jsonText = Http.responseText;
-    words(Http.responseText);
+    let list = JSON.parse(Http.responseText);
+    words(list);
     
 }
 
@@ -25,10 +26,10 @@ Http.onreadystatechange = (e) => {
 let word1 = '';
 let word2 = '';
 
-function words(jsonReturn) {
+function words(lists) {
 //    word1 = jsonReturn[0];
 //    word2 = jsonReturn;
-    console.log(jsonReturn);
+    console.log(lists[0]);
 }
 
 //Translate this to two variables, word1 and word2
