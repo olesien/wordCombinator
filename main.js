@@ -5,8 +5,6 @@ const translate = document.querySelector ('#Translate')
 const Http = new XMLHttpRequest();
 const url='https://random-word-api.herokuapp.com/word?key=CNFJ959F&number=2';
 
-
-//let jsonText = '';
 word.addEventListener('click', function()
 {
 
