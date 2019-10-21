@@ -23,14 +23,16 @@ Http.onreadystatechange = (e) => {
 
 });
 
-let word1 = '';
-let word2 = '';
 
 function words(lists) {
-    word1 = lists[0];
-    word2 = lists[1];
+    let word1 = lists[0];
+    let word2 = lists[1];
     console.log(word1 + ' ' + word2);
+    
+    translation(word1, word2);
 }
+
+function translation(word1, word2;)
 
 //Translate this to two variables, word1 and word2
 
