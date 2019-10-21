@@ -45,6 +45,17 @@ function translation(word1, word2) {
 // OUR KEY: trnsl.1.1.20191021T192454Z.c43817007eac43cd.9ac53323ffbcbf6aeb330f858abd1dd2b0f84b8c
 // MY EXAMPLE: https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20191021T192454Z.c43817007eac43cd.9ac53323ffbcbf6aeb330f858abd1dd2b0f84b8c&text=hello&lang=en-sv
 //MISSION: create a function that takes word (word1 and word2) and creates a finished output in swedish
+//    translate.addEventListener('click', function()
+//{
+//
+//Http.open("GET", "https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20191021T192454Z.c43817007eac43cd.9ac53323ffbcbf6aeb330f858abd1dd2b0f84b8c&text=%22+ Http.responseText +"&lang=en-sv");
+//Http.send();
+//Http.onreadystatechange = (e) => {
+//console.log(Http.responseText)
+}
+
+});
+    
 
 }
 
