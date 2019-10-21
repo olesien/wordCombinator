@@ -30,6 +30,8 @@ function words(lists) {
     console.log(word1 + ' ' + word2);
     
     translation(word1, word2);
+//    word1 = jsonReturn[0];
+//    word2 = jsonReturn;
 }
 
 function translation(word1, word2;)
