@@ -4,8 +4,6 @@ const word = document.querySelector ('#word')
 const Http = new XMLHttpRequest();
 const url='https://random-word-api.herokuapp.com/word?key=CNFJ959F&number=2';
 
-
-//let jsonText = '';
 word.addEventListener('click', function()
 {
 
@@ -13,8 +11,6 @@ Http.open("GET", url);
 Http.send();
 
 Http.onreadystatechange = (e) => {
-//  console.log(Http.responseText)
-//    jsonText = Http.responseText;
     let list = JSON.parse(Http.responseText);
     words(list);
     
@@ -30,8 +26,6 @@ function words(lists) {
     console.log(word1 + ' ' + word2);
     
     translation(word1, word2);
-//    word1 = jsonReturn[0];
-//    word2 = jsonReturn;
 }
 
 function translation(word1, word2) {
