@@ -35,13 +35,17 @@ function words(lists) {
 }
 
 function translation(word1, word2) {
-    
+//    https://translate.yandex.net/api/v1.5/tr.json/translate
+// ? key=<API key>
+// & text=<text to translate>
+// & lang=<translation direction>
+// & [format=<text format>]
+// & [options=<translation options>]
+// & [callback=<name of the callback function>]
+// OUR KEY: trnsl.1.1.20191021T192454Z.c43817007eac43cd.9ac53323ffbcbf6aeb330f858abd1dd2b0f84b8c
+
 }
 
-//Translate this to two variables, word1 and word2
-
-
-//Translate the word to swedish
 //let ord1 = '';
 //let ord2 = '';
 
