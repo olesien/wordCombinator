@@ -21,7 +21,7 @@ Http.onreadystatechange = (e) => {
 let word1 = '';
 let word2 = '';
 
-//Translate the word
+//Translate the word to swedish
 let ord1 = '';
 let ord2 = '';
 
