@@ -27,7 +27,7 @@ function words(lists) {
     document.getElementById("word2").innerHTML = "Word 1: " + lists[0];    
 };
 
-for (let i=1; i<20; i++) {
+for (let i = 1; i < 20; i++) {
     setTimeout( function timer(){
         Http.open("GET", url);
     Http.send();
