@@ -1,5 +1,4 @@
 //DON'T REPEAT YOURSELF YOU PLEB
-
 const word = document.querySelector('#word')
 const translate = document.querySelector('#Translate')
 const save = document.querySelector('#save')
@@ -8,7 +7,11 @@ const Http = new XMLHttpRequest();
 const api = 'EI85ZMRP';
 const url='https://random-word-api.herokuapp.com/word?key='+ api +'&number=2';
 
-
+function name()
+{
+var input = document.getElementById("userInput");
+alert(input);
+}
 function getapi() {
     Http.open("GET", 'https://random-word-api.herokuapp.com/key?');
     Http.onreadystatechange = (e) => {
@@ -24,8 +27,9 @@ function words(lists) {
     document.getElementById("word2").innerHTML = "Word 1: " + lists[0];    
 };
 
-word.addEventListener('click', function () {
-    Http.open("GET", url);
+for (let i=1; i<20; i++) {
+    setTimeout( function timer(){
+        Http.open("GET", url);
     Http.send();
 
     Http.onreadystatechange = (e) => {
@@ -42,8 +46,7 @@ word.addEventListener('click', function () {
             console.log("Translated:" + obj.text)
             document.getElementById("Translated").innerHTML = "Translated: " + obj.text;
             
-            
-            
+ 
         }
         // inner HTML REAULT 
         var node = document.createElement("LI");
@@ -52,19 +55,6 @@ word.addEventListener('click', function () {
             document.getElementById("myList").appendChild(node);
             
     }
+    }, i*700 );
+}
 
-
-});
-
-//save.addEventListener('click', function () {
-    //var textToSave = 'test 123';
-
-    //var hiddenElement = document.createElement('a');
-
-    //hiddenElement.href = 'data:attachment/text,' + encodeURI(textToSave);
-    //hiddenElement.target = '_blank';
-    //hiddenElement.download = 'myFile.txt';
-   // hiddenElement.click();
-
-
-//});
