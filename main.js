@@ -3,7 +3,7 @@
 const word = document.querySelector ('#word')
 const translate = document.querySelector ('#Translate')
 const Http = new XMLHttpRequest();
-const url='https://random-word-api.herokuapp.com/word?key=CNFJ959F&number=2';
+const url='https://random-word-api.herokuapp.com/word?key=WYTL0QZM&number=2';
 
 word.addEventListener('click', function()
 {
@@ -34,9 +34,9 @@ Http.onreadystatechange = (e) => {
 
 function words(lists) {
 
-    console.log(lists[0]);
     console.log(lists[1]);
-    document.getElementById("word1").innerHTML = "Word 2: " + lists[0];
-    document.getElementById("word2").innerHTML = "Word 1: " +lists[1];
+    console.log(lists[0]);
+    document.getElementById("word1").innerHTML = "Word 2: " + lists[1];
+    document.getElementById("word2").innerHTML = "Word 1: " +lists[0];
 };
 
