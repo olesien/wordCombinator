@@ -25,7 +25,6 @@ function words(lists) {
 };
 
 word.addEventListener('click', function () {
-
     Http.open("GET", url);
     Http.send();
 
@@ -51,20 +50,21 @@ word.addEventListener('click', function () {
             var textnode = document.createTextNode(obj.text);
             node.appendChild(textnode);
             document.getElementById("myList").appendChild(node);
+            
     }
 
 
 });
 
-save.addEventListener('click', function () {
-    var textToSave = 'test 123';
+//save.addEventListener('click', function () {
+    //var textToSave = 'test 123';
 
-    var hiddenElement = document.createElement('a');
+    //var hiddenElement = document.createElement('a');
 
-    hiddenElement.href = 'data:attachment/text,' + encodeURI(textToSave);
-    hiddenElement.target = '_blank';
-    hiddenElement.download = 'myFile.txt';
-    hiddenElement.click();
+    //hiddenElement.href = 'data:attachment/text,' + encodeURI(textToSave);
+    //hiddenElement.target = '_blank';
+    //hiddenElement.download = 'myFile.txt';
+   // hiddenElement.click();
 
 
-});
+//});
