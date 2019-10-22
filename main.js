@@ -2,6 +2,7 @@
 
 const word = document.querySelector ('#word')
 const translate = document.querySelector ('#Translate')
+const save = document.querySelector ('#save')
 const Http = new XMLHttpRequest();
 const url='https://random-word-api.herokuapp.com/word?key=WYTL0QZM&number=2';
 
@@ -40,3 +41,17 @@ function words(lists) {
     document.getElementById("word2").innerHTML = "Word 1: " +lists[0];
 };
 
+// save to file **** NOT WORKING ****
+
+save.addEventListener('click', function(){
+    var textToSave = Http.responseText;
+
+    var hiddenElement = document.createElement('a');
+    
+    hiddenElement.href = 'data:attachment/text,' + encodeURI(textToSave);
+    hiddenElement.target = '_blank';
+    hiddenElement.download = 'myFile.txt';
+    hiddenElement.click();
+
+
+});
