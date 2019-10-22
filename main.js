@@ -1,7 +1,4 @@
-const word = document.querySelector('#word')
-const translate = document.querySelector('#Translate')
-const save = document.querySelector('#save')
-const myList = document.querySelector('#myList')
+const reload = document.querySelector('#Reload')
 const Http = new XMLHttpRequest();
 const api = 'EI85ZMRP';
 const url='https://random-word-api.herokuapp.com/word?key='+ api +'&number=2';
@@ -42,5 +39,11 @@ for (let i = 1; i < 50; i++) {
             
     }
     }, i*500 );
+
+    reload.addEventListener('click', function(){
+        location.reload();
+    }); 
 }
+
+
 
