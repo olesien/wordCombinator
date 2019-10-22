@@ -41,6 +41,6 @@ li {
 
 @media only screen and (max-width: 600px) {
     #myList {
-      width: 100px;
+      width: 200px;
     }
   }
