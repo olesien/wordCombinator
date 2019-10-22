@@ -11,7 +11,6 @@ word.addEventListener('click', function () {
 
     Http.open("GET", url);
     Http.send();
-
     Http.onreadystatechange = (e) => {
         let translatelist = JSON.parse(Http.responseText);
         words(translatelist);
