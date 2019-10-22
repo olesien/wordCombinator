@@ -4,7 +4,7 @@ const word = document.querySelector('#word')
 const translate = document.querySelector('#Translate')
 const save = document.querySelector('#save')
 const Http = new XMLHttpRequest();
-const api = 'WYTL0QZM'
+const api = 'R1RVP6DI'
 const url = 'https://random-word-api.herokuapp.com/word?key=' + api + '&number=2';
 
 word.addEventListener('click', function () {
