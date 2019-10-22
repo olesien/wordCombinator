@@ -11,7 +11,7 @@ function words(lists) {
     document.getElementById("word2").innerHTML = "Word 1: " + lists[0];    
 };
     //loop it x times
-for (let i = 1; i < 20; i++) {
+for (let i = 1; i < 22; i++) {
     setTimeout( function timer(){
         //gets the english words
         Http.open("GET", url);
