@@ -24,10 +24,11 @@ button {
 }
 #myList{
     border:2px solid black;
-    width: 400px;
+    width: 600px;
     padding-right: 40px;
     padding-left: 40px;
     padding-top: 10px;
+    padding-bottom: 10px;
     margin: auto;
     text-align: left;
     border-radius: 20px;
@@ -36,3 +37,10 @@ button {
 li {
     padding: 5px;
 }
+
+
+@media only screen and (max-width: 600px) {
+    #myList {
+      width: 100px;
+    }
+  }
