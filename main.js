@@ -44,7 +44,7 @@ for (let i=1; i<20; i++) {
 
             // log eng words.
             console.log("Translated:" + obj.text)
-            document.getElementById("Translated").innerHTML = "Translated: " + obj.text;
+            //document.getElementById("Translated").innerHTML = "Translated: " + obj.text;
             
  
         }
