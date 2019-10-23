@@ -38,12 +38,13 @@ for (let i = 1; i < 22; i++) {
             document.getElementById("myList").appendChild(node);
             
     }
-    }, i*700 );
+    },i*700 );
 
-    reload.addEventListener('click', function(){
-        location.reload();
-    }); 
+
 }
 
+reload.addEventListener('click', function(){
+    location.reload();
+}); 
 
 
