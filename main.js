@@ -1,6 +1,6 @@
 const reload = document.querySelector('#Reload')
 const Http = new XMLHttpRequest();
-const api = 'EI85ZMRP';
+const api = 'OM981Z9W';
 const url='https://random-word-api.herokuapp.com/word?key='+ api +'&number=2';
 
     //displays Eng words in separate lines
