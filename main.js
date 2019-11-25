@@ -45,4 +45,5 @@ for (let i = 1; i < 22; i++) {
 
 reload.addEventListener('click', function () {
     location.reload();
+    console.log("reload");
 });
